@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorteador</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1 id="titlebr">Sort a number</h1>
+      <table>
+        <tr>
+          <td>
+            <label for="valueofallnumbers"
+              >Quantidade de números que deseja sortear:</label
+            >
+          </td>
+          <td>
+            <input
+              type="number"
+              name="valueofallnumbers"
+              id="quantity"
+              value="0"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="initialvalueofnumber">Sortear de:</label></td>
+          <td>
+            <input
+              type="number"
+              name="valueofinitialsort"
+              id="initial"
+              value="0"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="finalvalueofnumber">Até:</label></td>
+          <td>
+            <input
+              type="number"
+              name="finalvalueofnumber"
+              id="final"
+              value="0"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <button onclick="sort()" id="btn">Clique aqui para sortear!</button>
+    <script src="main.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  </body>
+</html>
